@@ -1,0 +1,92 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #404C51;
+    margin: 0;
+}
+
+label {
+    font-weight: bold;
+}
+
+@media (min-width: 1300px){
+  .container {
+    width: 1270px;
+    margin: 0 auto;
+  }
+}
+
+.col-header-valor {
+  width: 7em;
+}
+
+.col-body-valor {
+  width: 7em;
+  text-align: right;
+}
+
+.col-header-data {
+  width: 10em;
+}
+
+.col-body-data {
+  width: 10em;
+  text-align: center;
+}
+
+.col-header-qtd {
+  width: 10em;
+}
+
+.col-body-qtd {
+  width: 10em;
+  text-align: right;
+}
+
+.col-header-nome {
+  width: 20em;
+}
+
+.col-body-nome {
+  width: 20em;
+  text-align: left;
+}
+
+.col-header-marca {
+  width: 10em;
+}
+
+.col-body-marca {
+  width: 10em;
+  text-align: left;
+}
+
+.col-body-cpf {
+  text-align: center;
+}
+
+.col-body-telefone {
+  text-align: center;
+}
+
+.col-acoes {
+  width: 8em;
+  text-align: center;
+}
+
+.col-acoes :hover {
+  color: #ffffff;
+}
+
+body .ui-message.ui-message-error {
+  background-color: #de2c1a;
+  color: #ffffff;
+}
+
+.pi-times:before {
+  content: none;
+}
+
+a {
+  cursor: pointer;
+}

@@ -1,0 +1,24 @@
+
+.navbar-nav {
+    display: grid;
+    flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.nav-link {
+      padding-right: 0;
+      padding-left: 0;
+}
+  
+.dropdown-menu {
+      position: static;
+      float: none;
+}
+
+.navbar-brand {
+    display: inline-block;
+    line-height: inherit;
+    white-space: nowrap;
+  }
+  

@@ -1,0 +1,112 @@
+<h3>Solicitação de nova proposta</h3>
+
+<p>Preencha os dados abaixo para solicitar uma proposta de crédito</p>
+
+<form #solicitacaoform="ngForm" (ngSubmit)="onSubmit(solicitacaoform)" autocomplete="off">
+    <div class="ui-g">
+        <div class="p-field p-col-12 p-md-4">
+            <label>Tipo: </label>
+            <p-dropdown [options]="tipopessoa" [(ngModel)]="tipo"></p-dropdown>
+        </div>
+    </div>
+
+    <div class="ui-g">
+        <div class="ui-g-6 ui-fluid">
+            <label>Nome Completo: </label>
+            <input pInputText type="text" name="nome" #nome="ngModel" ngModel>
+        </div>
+    </div>
+
+    <div class="ui-g-6 ui-fluid">
+        <label>CPF: </label>
+        <p-inputMask mask="999.999.999-99" name="cpf" #cpf="ngModel" ngModel></p-inputMask>
+    </div>
+
+    <div class="ui-g-6 ui-fluid">
+        <label>CNPJ: </label>
+        <p-inputMask mask="99.999.999/9999-99" name="cnpj" #cnpj="ngModel" ngModel ></p-inputMask>
+    </div>
+
+    <div class="ui-g-6 ui-fluid">
+        <label style="display: block">Data de Nascimento: </label>
+        <p-calendar [monthNavigator]="true" [yearNavigator]="true" yearRange="1900:2050" name="dataNascimento"
+            #dataNascimento="ngModel" ngModel dateFormat="dd/mm/yy" showButtonBar="true" showIcon="true">
+        </p-calendar>
+    </div>
+
+    <div class="ui-g">
+        <div class="ui-g-6 ui-fluid">
+            <label>Endereço: </label>
+            <input pInputText type="text" name="endereco" #endereco="ngModel" ngModel>
+        </div>
+    </div>
+
+    <div class="ui-g">
+        <div class="ui-g-6 ui-fluid">
+            <label>Cidade: </label>
+            <input pInputText type="text" name="cidade" #cidade="ngModel" ngModel>
+        </div>
+    </div>
+
+    <div class="ui-g">
+        <div class="ui-g-6 ui-fluid">
+            <label>Estado (UF): </label>
+            <input pInputText type="text" name="estado" #estado="ngModel" ngModel >
+        </div>
+    </div>
+
+    <div class="ui-g">
+        <div class="ui-g-6 ui-fluid">
+            <label>Profissão: </label>
+            <input pInputText type="text" name="profissao" #profissao="ngModel" ngModel>
+        </div>
+    </div>
+
+    <div class="ui-g">
+        <div class="ui-g-6 ui-fluid">
+            <label>Email: </label>
+            <input pInputText type="text" name="email" #email="ngModel" ngModel>
+        </div>
+    </div>
+
+    <div class="ui-g">
+        <div class="ui-g-6 ui-fluid">
+            <label>Telefone: </label>
+            <input pInputText type="text" name="telefone" #telefone="ngModel" ngModel>
+        </div>
+    </div>
+
+    <div class="ui-g">
+        <div class="ui-g-6 ui-fluid">
+        <label>Estado Civil: </label>
+        <p-dropdown  [options]="estadocivil" [(ngModel)]="estadocivil"></p-dropdown>
+        </div>
+    </div>
+
+    <div class="ui-g">
+        <div class="ui-g-6 ui-fluid">
+        <label>Gênero: </label>
+        <p-dropdown  [options]="genero" [(ngModel)]="genero"></p-dropdown>
+        </div>
+    </div>
+
+    
+    <div class="ui-g">
+        <div class="ui-g-6 ui-fluid">
+        <label>Renda: </label>
+        <p-dropdown  [options]="renda" [(ngModel)]="rendapessoa"></p-dropdown>
+        </div>
+    </div>
+    
+</form>
+<div class="ui-g">
+    <div class="ui-g-6 ui-fluid">
+    <button pButton type="submit" label="Salvar" ngModel ></button>
+    </div>
+</div>
+<div class="ui-g">
+     <div class="ui-g-12 ui-fluid">
+    <a routerLink="../acompanhamento" class="btn btn-link4"></a>
+    <a href="../home/" class="btn btn-secondary mt-4 ml-2" >Cancelar</a>
+     </div>
+</div>
