@@ -1,27 +1,15 @@
 # Sistema Emprestimo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.2.
+Este projeto foi criado utilizando [Angular CLI](https://github.com/angular/angular-cli) na versão 8.0.2. Foi utilizada a biblioteca de componentes PrimeNG.
 
-## Development server
+## Execução
+ 
+Execute `ng serve` para rodar a aplicação. O sistema estará disponível em `http://localhost:4200/`.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Desenvolvimento
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Para a tela de login, foi criada dois campos (CPF e senha), onde o botão login só estará disponível após o preenchimento dos campos. 
+Na tela de cadastro, foram criados 4 campos (Nome, CPF, data de nascimento e senha) para preenchimento e os dados ficam armazenados no localStorage do broswer.
+Ao logar, será redirecionado a tela Home, onde estará disponível no menu superior, as opções de Nova Solicitação e Acompanhamento de proposta.
+Na tela de Nova Solicitação, foi criado um Form para a coleta dos dados e armazenamento no localStorage do broswer.
+Na tela de Acompanhamento de proposta, a ideia é apenas realizar a busca de alguma proposta para o cliente pelo CPF (busca essa que seria realizada no localStorage). 
